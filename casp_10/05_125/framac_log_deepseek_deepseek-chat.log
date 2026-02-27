@@ -1,0 +1,21 @@
+# Reproducibility header
+# date_utc: 2026-02-27T15:28:19Z
+# provider: deepseek
+# model: deepseek-chat
+# prover: alt-ergo
+# cwd: /home/ubuntu/workspace/formal_week_github
+# file: /home/ubuntu/workspace/formal_week_github/casp_10/05_125/code_with_llm_spec_deepseek_deepseek-chat.c
+# cmd: frama-c -wp -wp-rte -wp-prover alt-ergo /home/ubuntu/workspace/formal_week_github/casp_10/05_125/code_with_llm_spec_deepseek_deepseek-chat.c
+# --- Begin frama-c output ---
+[kernel] Parsing casp_10/05_125/code_with_llm_spec_deepseek_deepseek-chat.c (with preprocessing)
+[kernel] casp_10/05_125/code_with_llm_spec_deepseek_deepseek-chat.c:1: User Error: 
+  Cannot find field valid in type struct maybeBool
+  
+  1     /*@
+  2       assigns \nothing;
+  3       ensures \result.valid == false;
+  4       ensures \result.value == false;
+  
+  5     */
+  6     struct maybeBool noneBool () {
+[kernel] Frama-C aborted: invalid user input.

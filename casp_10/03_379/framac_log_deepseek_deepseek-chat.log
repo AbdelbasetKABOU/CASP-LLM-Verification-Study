@@ -1,0 +1,26 @@
+# Reproducibility header
+# date_utc: 2026-02-27T15:28:10Z
+# provider: deepseek
+# model: deepseek-chat
+# prover: alt-ergo
+# cwd: /home/ubuntu/workspace/formal_week_github
+# file: /home/ubuntu/workspace/formal_week_github/casp_10/03_379/code_with_llm_spec_deepseek_deepseek-chat.c
+# cmd: frama-c -wp -wp-rte -wp-prover alt-ergo /home/ubuntu/workspace/formal_week_github/casp_10/03_379/code_with_llm_spec_deepseek_deepseek-chat.c
+# --- Begin frama-c output ---
+[kernel] Parsing casp_10/03_379/code_with_llm_spec_deepseek_deepseek-chat.c (with preprocessing)
+[wp] Running WP plugin...
+[rte:annot] annotating function selectioninnerloop
+[wp] casp_10/03_379/code_with_llm_spec_deepseek_deepseek-chat.c:5: Warning: 
+  Lambda-functions not yet implemented
+[wp] Use -wp-msg-key 'driver' for debugging drivers
+[wp] casp_10/03_379/code_with_llm_spec_deepseek_deepseek-chat.c:5: Warning: 
+  Builtin \max undefined with signature (int,int,_)
+[wp] 23 goals scheduled
+[wp] [Timeout] typed_selectioninnerloop_ensures_2 (Qed 40ms) (Alt-Ergo)
+[wp] [Timeout] typed_selectioninnerloop_ensures (Qed 39ms) (Alt-Ergo) (Stronger, 2 warnings)
+[wp] Proved goals:   23 / 25
+  Terminating:       1
+  Unreachable:       1
+  Qed:              12 (19ms-18ms-75ms)
+  Alt-Ergo 2.4.3:    9 (61ms-80ms-118ms)
+  Timeout:           2

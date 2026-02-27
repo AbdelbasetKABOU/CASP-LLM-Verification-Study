@@ -1,0 +1,36 @@
+/*@
+requires \valid(m+(0..3));
+requires \valid(v+(0..1));
+requires \valid(o+(0..1));
+requires \forall int i; \forall int j;
+  0 <= i < 4 && 0 <= j < 2 ==> \separated(m+i,o+j);
+requires \forall int i; \forall int j;
+  0 <= i < 2 && 0 <= j < 2 ==> \separated(v+i,o+j);
+
+assigns o[0..1];
+
+ensures o[0] == (m[0] && v[0]) || (m[1] && v[1]);
+ensures o[1] == (m[2] && v[0]) || (m[3] && v[1]);
+*/
+void mv_mult2_bool(int *m, int *v, int *o) {
+  o[0] = (m[0] && v[0]) || (m[1] && v[1]);
+  o[1] = (m[2] && v[0]) || (m[3] && v[1]);
+}
+
+/*@
+requires \valid(m+(0..3));
+requires \valid(v+(0..1));
+requires \valid(o+(0..1));
+requires \forall int i; \forall int j;
+  0 <= i < 4 && 0 <= j < 2 ==> \separated(m+i,o+j);
+requires \forall int i; \forall int j;
+  0 <= i < 2 && 0 <= j < 2 ==> \separated(v+i,o+j);
+
+requires \forall int i; 0 <= i < 4 ==> 0 <= m[i] <= 1;
+requires \forall int i; 0 <= i < 2 ==> 0 <= v[i] <= 1;
+
+assigns o[0..1];
+
+ensures o[0] == m[0]*v[0]+m[1]*v[1];
+ensures o[1] == m[2]*v[0]+m[3]*v[1];
+*/

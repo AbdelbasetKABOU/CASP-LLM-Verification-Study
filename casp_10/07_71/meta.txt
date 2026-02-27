@@ -1,0 +1,4 @@
+file_name: frama_c_files_v2/test_frama_c_1756.c
+verified: True
+verified_goals: 14
+total_goals: 14

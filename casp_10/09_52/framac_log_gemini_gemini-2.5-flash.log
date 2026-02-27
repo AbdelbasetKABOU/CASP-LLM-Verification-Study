@@ -1,0 +1,31 @@
+# Reproducibility header
+# date_utc: 2026-02-27T15:28:55Z
+# provider: gemini
+# model: gemini-2.5-flash
+# prover: alt-ergo
+# cwd: /home/ubuntu/workspace/formal_week_github
+# file: /home/ubuntu/workspace/formal_week_github/casp_10/09_52/code_with_llm_spec_gemini_gemini-2.5-flash.c
+# cmd: frama-c -wp -wp-rte -wp-prover alt-ergo /home/ubuntu/workspace/formal_week_github/casp_10/09_52/code_with_llm_spec_gemini_gemini-2.5-flash.c
+# --- Begin frama-c output ---
+[kernel] Parsing casp_10/09_52/code_with_llm_spec_gemini_gemini-2.5-flash.c (with preprocessing)
+[wp] Running WP plugin...
+[rte:annot] annotating function mv_mult2
+[wp] 26 goals scheduled
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_3 (Qed 13ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_2 (Qed 12ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow (Qed 12ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_4 (Qed 18ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_6 (Qed 20ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_5 (Qed 26ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_7 (Qed 40ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_8 (Qed 41ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_10 (Qed 44ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_9 (Qed 43ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_12 (Qed 50ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_11 (Qed 47ms) (Alt-Ergo)
+[wp] Proved goals:   16 / 28
+  Terminating:       1
+  Unreachable:       1
+  Qed:               5 (10ms-23ms-50ms)
+  Alt-Ergo 2.4.3:    9 (42ms-304ms-1.8s)
+  Timeout:          12

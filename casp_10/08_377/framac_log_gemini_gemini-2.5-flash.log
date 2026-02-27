@@ -1,0 +1,18 @@
+# Reproducibility header
+# date_utc: 2026-02-27T15:28:35Z
+# provider: gemini
+# model: gemini-2.5-flash
+# prover: alt-ergo
+# cwd: /home/ubuntu/workspace/formal_week_github
+# file: /home/ubuntu/workspace/formal_week_github/casp_10/08_377/code_with_llm_spec_gemini_gemini-2.5-flash.c
+# cmd: frama-c -wp -wp-rte -wp-prover alt-ergo /home/ubuntu/workspace/formal_week_github/casp_10/08_377/code_with_llm_spec_gemini_gemini-2.5-flash.c
+# --- Begin frama-c output ---
+[kernel] Parsing casp_10/08_377/code_with_llm_spec_gemini_gemini-2.5-flash.c (with preprocessing)
+[wp] Running WP plugin...
+[rte:annot] annotating function check
+[wp] 14 goals scheduled
+[wp] Proved goals:   16 / 16
+  Terminating:       1
+  Unreachable:       1
+  Qed:              10 (17ms-8ms-56ms)
+  Alt-Ergo 2.4.3:    4 (37ms-64ms)

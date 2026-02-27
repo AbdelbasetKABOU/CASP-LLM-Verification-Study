@@ -1,0 +1,17 @@
+# Reproducibility header
+# date_utc: 2026-02-27T15:28:18Z
+# provider: openai
+# model: gpt-5.2
+# prover: alt-ergo
+# cwd: /home/ubuntu/workspace/formal_week_github
+# file: /home/ubuntu/workspace/formal_week_github/casp_10/04_140/code_with_llm_spec_openai_gpt-5.2.c
+# cmd: frama-c -wp -wp-rte -wp-prover alt-ergo /home/ubuntu/workspace/formal_week_github/casp_10/04_140/code_with_llm_spec_openai_gpt-5.2.c
+# --- Begin frama-c output ---
+[kernel] Parsing casp_10/04_140/code_with_llm_spec_openai_gpt-5.2.c (with preprocessing)
+[wp] Running WP plugin...
+[rte:annot] annotating function g
+[wp] 13 goals scheduled
+[wp] Proved goals:   15 / 15
+  Terminating:     1
+  Unreachable:     1
+  Qed:            13

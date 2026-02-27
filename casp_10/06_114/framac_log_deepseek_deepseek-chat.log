@@ -1,0 +1,25 @@
+# Reproducibility header
+# date_utc: 2026-02-27T15:28:22Z
+# provider: deepseek
+# model: deepseek-chat
+# prover: alt-ergo
+# cwd: /home/ubuntu/workspace/formal_week_github
+# file: /home/ubuntu/workspace/formal_week_github/casp_10/06_114/code_with_llm_spec_deepseek_deepseek-chat.c
+# cmd: frama-c -wp -wp-rte -wp-prover alt-ergo /home/ubuntu/workspace/formal_week_github/casp_10/06_114/code_with_llm_spec_deepseek_deepseek-chat.c
+# --- Begin frama-c output ---
+[kernel] Parsing casp_10/06_114/code_with_llm_spec_deepseek_deepseek-chat.c (with preprocessing)
+[kernel:typing:implicit-function-declaration] casp_10/06_114/code_with_llm_spec_deepseek_deepseek-chat.c:8: Warning: 
+  Calling undeclared function abs. Old style K&R code?
+[kernel:typing:implicit-function-declaration] casp_10/06_114/code_with_llm_spec_deepseek_deepseek-chat.c:10: Warning: 
+  Calling undeclared function max. Old style K&R code?
+[wp] Running WP plugin...
+[rte:annot] annotating function max_abs
+[kernel:annot:missing-spec] casp_10/06_114/code_with_llm_spec_deepseek_deepseek-chat.c:8: Warning: 
+  Neither code nor specification for function abs,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[kernel:annot:missing-spec] casp_10/06_114/code_with_llm_spec_deepseek_deepseek-chat.c:10: Warning: 
+  Neither code nor specification for function max,
+   generating default exits, assigns and terminates. See -generated-spec-* options for more info
+[wp] 11 goals scheduled
+[wp] Proved goals:   11 / 11
+  Qed:            11

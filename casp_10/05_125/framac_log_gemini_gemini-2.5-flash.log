@@ -1,0 +1,22 @@
+# Reproducibility header
+# date_utc: 2026-02-27T15:28:19Z
+# provider: gemini
+# model: gemini-2.5-flash
+# prover: alt-ergo
+# cwd: /home/ubuntu/workspace/formal_week_github
+# file: /home/ubuntu/workspace/formal_week_github/casp_10/05_125/code_with_llm_spec_gemini_gemini-2.5-flash.c
+# cmd: frama-c -wp -wp-rte -wp-prover alt-ergo /home/ubuntu/workspace/formal_week_github/casp_10/05_125/code_with_llm_spec_gemini_gemini-2.5-flash.c
+# --- Begin frama-c output ---
+[kernel] Parsing casp_10/05_125/code_with_llm_spec_gemini_gemini-2.5-flash.c (with preprocessing)
+[kernel] casp_10/05_125/code_with_llm_spec_gemini_gemini-2.5-flash.c:1: User Error: 
+  Cannot find field value in type struct maybeBool
+  
+  1     /*@
+  2       @ requires \true;
+  3       @ assigns \nothing;
+  4       @ ensures \result.hasValue == \false && \result.value == \false;
+  5       @*/
+  
+  6     struct maybeBool noneBool () {
+  7         struct maybeBool result = { false, false };
+[kernel] Frama-C aborted: invalid user input.

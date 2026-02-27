@@ -1,0 +1,33 @@
+# Reproducibility header
+# date_utc: 2026-02-27T15:28:48Z
+# provider: deepseek
+# model: deepseek-chat
+# prover: alt-ergo
+# cwd: /home/ubuntu/workspace/formal_week_github
+# file: /home/ubuntu/workspace/formal_week_github/casp_10/09_52/code_with_llm_spec_deepseek_deepseek-chat.c
+# cmd: frama-c -wp -wp-rte -wp-prover alt-ergo /home/ubuntu/workspace/formal_week_github/casp_10/09_52/code_with_llm_spec_deepseek_deepseek-chat.c
+# --- Begin frama-c output ---
+[kernel] Parsing casp_10/09_52/code_with_llm_spec_deepseek_deepseek-chat.c (with preprocessing)
+[wp] Running WP plugin...
+[rte:annot] annotating function mv_mult2
+[wp] 26 goals scheduled
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_3 (Qed 13ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_2 (Qed 12ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow (Qed 12ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_ensures_2 (Qed 56ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_ensures (Qed 82ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_6 (Qed 19ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_5 (Qed 26ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_4 (Qed 33ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_8 (Qed 52ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_7 (Qed 45ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_9 (Qed 44ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_11 (Qed 61ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_10 (Qed 45ms) (Alt-Ergo)
+[wp] [Timeout] typed_mv_mult2_assert_rte_signed_overflow_12 (Qed 50ms) (Alt-Ergo)
+[wp] Proved goals:   14 / 28
+  Terminating:       1
+  Unreachable:       1
+  Qed:               4 (10ms-28ms-82ms)
+  Alt-Ergo 2.4.3:    8 (29ms-104ms-195ms)
+  Timeout:          14

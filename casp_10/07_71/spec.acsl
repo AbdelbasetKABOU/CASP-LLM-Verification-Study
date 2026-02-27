@@ -1,0 +1,32 @@
+#include <limits.h>
+#include <string.h>
+
+/*@ logic integer cypher(int  x0) = (((x0==26)) ? (0) : ((x0+1)));*/
+/*@
+requires ((0<=x0) &&
+(x0<=26));
+assigns \nothing;
+ensures ((0<=\result) &&
+(\result<=26));
+ensures \result == cypher(x0);
+*/
+int cypher(int  x0) {
+  int x2 = x0 == 26;
+  int x4;
+  if (x2) {
+    x4 = 0;
+  } else {
+    int x3 = x0 + 1;
+    x4 = x3;
+  }
+  return x4;
+}
+/*@ logic integer decypher(int  x15) = (((x15==0)) ? (26) : ((x15-1)));*/
+/*@
+requires ((0<=x15) &&
+(x15<=26));
+assigns \nothing;
+ensures ((0<=\result) &&
+(\result<=26));
+ensures \result == decypher(x15);
+*/

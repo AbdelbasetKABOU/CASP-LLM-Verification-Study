@@ -1,0 +1,14 @@
+# Reproducibility header
+# date_utc: 2026-02-27T15:28:24Z
+# provider: openai
+# model: gpt-5.2
+# prover: alt-ergo
+# cwd: /home/ubuntu/workspace/formal_week_github
+# file: /home/ubuntu/workspace/formal_week_github/casp_10/06_114/code_with_llm_spec_openai_gpt-5.2.c
+# cmd: frama-c -wp -wp-rte -wp-prover alt-ergo /home/ubuntu/workspace/formal_week_github/casp_10/06_114/code_with_llm_spec_openai_gpt-5.2.c
+# --- Begin frama-c output ---
+[kernel] Parsing casp_10/06_114/code_with_llm_spec_openai_gpt-5.2.c (with preprocessing)
+[kernel:annot-error] casp_10/06_114/code_with_llm_spec_openai_gpt-5.2.c:2: Failure: 
+  unbound logic variable INT_MIN. Ignoring logic specification of function max_abs
+[kernel] User Error: warning annot-error treated as fatal error.
+[kernel] Frama-C aborted: invalid user input.

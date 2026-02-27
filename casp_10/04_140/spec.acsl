@@ -1,0 +1,3 @@
+/*@ requires y > 10;
+  @ ensures \result >= 0;
+*/

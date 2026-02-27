@@ -1,4 +1,4 @@
-# CASP-LLM-Verification-Study
+# CASP LLM Verification Study
 
 An automated evaluation pipeline to test LLM-generated ACSL specifications on [CASP](https://huggingface.co/datasets/nicher92/CASP_dataset) dataset using Frama-C WP.
 

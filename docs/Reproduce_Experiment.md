@@ -17,9 +17,15 @@ frama-c -version
 alt-ergo --version
 ```
 
+Before running the pipeline, create a .env file containing API credentials used to generate ACSL. You can copy the provided template and fill in your keys:
+
+`cp example_of_.env_file .env`
+
+n.b. CASP dataset is publicly available on [HuggingFace](https://huggingface.co/datasets/nicher92/CASP_dataset) and does not require authentication for download.
+
 #### 2. Sample CASP benchmark pairs
 
-Download and sample a subset of the CASP dataset : `python 01_sample_casp.py`. 
+Download and sample a subset of CASP : `python 01_sample_casp.py`. 
 
 - This creates the directory structure:
 

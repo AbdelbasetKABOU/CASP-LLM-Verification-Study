@@ -6,3 +6,5 @@ langchain_openai==1.1.11
 pandas==3.0.1
 python-dotenv==1.2.2
 tqdm==4.67.3
+#python 3.10.19
+#ubuntu 20.04.6 LTS
